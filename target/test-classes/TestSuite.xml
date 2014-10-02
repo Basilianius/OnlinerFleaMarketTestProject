@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Course Project Test Plan" verbose="1">
+	
+	<test name="Functional Tests" preserve-order="true">
+		<parameter name="baseUrl" value="http://onliner.by" />	
+		<parameter name="accountFilePath" value="src\test\resources\accountFile.xlsx" />
+		<parameter name="accountFileSheetName" value="Sheet1" />
+		<classes>
+ 			<!-- <class name="fleamarket.test.RegisterAccountTest" /> -->
+ 			<class name="fleamarket.test.LogInTest" />
+        </classes>
+	</test>
+</suite>

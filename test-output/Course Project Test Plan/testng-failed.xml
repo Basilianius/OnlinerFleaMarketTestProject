@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Course Project Test Plan]">
+  <parameter name="baseUrl" value="http://onliner.by"/>
+  <parameter name="accountFilePath" value="src\test\resources\accountFile.xlsx"/>
+  <parameter name="accountFileSheetName" value="Sheet1"/>
+  <test name="Functional Tests(failed)">
+    <parameter name="baseUrl" value="http://onliner.by"/>
+    <parameter name="accountFileSheetName" value="Sheet1"/>
+    <parameter name="accountFilePath" value="src\test\resources\accountFile.xlsx"/>
+    <classes>
+      <class name="fleamarket.test.LogInTest">
+        <methods>
+          <include name="readParams" invocation-numbers="0"/>
+          <include name="after"/>
+          <include name="before"/>
+        </methods>
+      </class> <!-- fleamarket.test.LogInTest -->
+    </classes>
+  </test> <!-- Functional Tests(failed) -->
+</suite> <!-- Failed suite [Course Project Test Plan] -->

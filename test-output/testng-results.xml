@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+    <line>
+      <![CDATA[browser driver was constructed<br>]]>
+    </line>
+    <line>
+      <![CDATA[Browser 'firefox' ready...<br>]]>
+    </line>
+    <line>
+      <![CDATA[-----------------------------------------------------------------------------------<br>]]>
+    </line>
+    <line>
+      <![CDATA[=====================  Test case: 'fleamarket.test.LogInTest' =====================<br>]]>
+    </line>
+    <line>
+      <![CDATA[-----------------------------------------------------------------------------------<br>]]>
+    </line>
+    <line>
+      <![CDATA[--------==[ Preconditions ]==--------<br>]]>
+    </line>
+    <line>
+      <![CDATA[--------==[ Step 1 ]==--------<br>]]>
+    </line>
+    <line>
+      <![CDATA[OPEN MAINPAGE<br>]]>
+    </line>
+    <line>
+      <![CDATA[Form 'MainPage signed is false' appears in 194msec<br>]]>
+    </line>
+    <line>
+      <![CDATA[--------==[ Step 2 ]==--------<br>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[LOGOUTLOGINKW is START<br>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[SING OUT/IN TO ACCOUNT<br>]]>
+    </line>
+    <line>
+      <![CDATA[Text Field 'UserName' :: Typing 'mrqabugs'<br>]]>
+    </line>
+    <line>
+      <![CDATA[Text Field 'Password' :: Clicking<br>]]>
+    </line>
+    <line>
+      <![CDATA[Text Field 'Password' :: Typing 'ZAQ12wsx'<br>]]>
+    </line>
+    <line>
+      <![CDATA[Button 'SignIn' :: Clicking<br>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[LOGOUTLOGINKW is END<br>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[LOGOUTLOGINKW is SUCCESSED<br>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[--------==[ Step 3 ]==--------<br>]]>
+    </line>
+    <line>
+      <![CDATA[CHECK SIGNED ACCOUNT<br>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[**********************************************************<br>]]>
+    </line>
+    <line>
+      <![CDATA[***** Test case: 'fleamarket.test.LogInTest' Passed! *****<br>]]>
+    </line>
+    <line>
+      <![CDATA[**********************************************************<br>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[driver.quit...<br>]]>
+    </line>
+    <line>
+      <![CDATA[killing processes<br>]]>
+    </line>
+  </reporter-output>
+  <suite name="Course Project Test Plan" duration-ms="8925" started-at="2014-10-02T20:09:26Z" finished-at="2014-10-02T20:09:35Z">
+    <groups>
+    </groups>
+    <test name="Functional Tests" duration-ms="8925" started-at="2014-10-02T20:09:26Z" finished-at="2014-10-02T20:09:35Z">
+      <class name="fleamarket.test.LogInTest">
+        <test-method status="PASS" signature="before(org.testng.ITestContext)[pri:0, instance:fleamarket.test.LogInTest@b2c6b61]" name="before" is-config="true" duration-ms="84" started-at="2014-10-03T08:09:26Z" finished-at="2014-10-03T08:09:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@3c07590f]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="readParams(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:fleamarket.test.LogInTest@b2c6b61]" name="readParams" duration-ms="8094" started-at="2014-10-03T08:09:26Z" finished-at="2014-10-03T08:09:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://onliner.by]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[src\test\resources\accountFile.xlsx]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Sheet1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[-----------------------------------------------------------------------------------<br>]]>
+            </line>
+            <line>
+              <![CDATA[=====================  Test case: 'fleamarket.test.LogInTest' =====================<br>]]>
+            </line>
+            <line>
+              <![CDATA[-----------------------------------------------------------------------------------<br>]]>
+            </line>
+            <line>
+              <![CDATA[--------==[ Preconditions ]==--------<br>]]>
+            </line>
+            <line>
+              <![CDATA[--------==[ Step 1 ]==--------<br>]]>
+            </line>
+            <line>
+              <![CDATA[OPEN MAINPAGE<br>]]>
+            </line>
+            <line>
+              <![CDATA[Form 'MainPage signed is false' appears in 194msec<br>]]>
+            </line>
+            <line>
+              <![CDATA[--------==[ Step 2 ]==--------<br>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[LOGOUTLOGINKW is START<br>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[SING OUT/IN TO ACCOUNT<br>]]>
+            </line>
+            <line>
+              <![CDATA[Text Field 'UserName' :: Typing 'mrqabugs'<br>]]>
+            </line>
+            <line>
+              <![CDATA[Text Field 'Password' :: Clicking<br>]]>
+            </line>
+            <line>
+              <![CDATA[Text Field 'Password' :: Typing 'ZAQ12wsx'<br>]]>
+            </line>
+            <line>
+              <![CDATA[Button 'SignIn' :: Clicking<br>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[LOGOUTLOGINKW is END<br>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[LOGOUTLOGINKW is SUCCESSED<br>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[--------==[ Step 3 ]==--------<br>]]>
+            </line>
+            <line>
+              <![CDATA[CHECK SIGNED ACCOUNT<br>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[**********************************************************<br>]]>
+            </line>
+            <line>
+              <![CDATA[***** Test case: 'fleamarket.test.LogInTest' Passed! *****<br>]]>
+            </line>
+            <line>
+              <![CDATA[**********************************************************<br>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- readParams -->
+        <test-method status="PASS" signature="after()[pri:0, instance:fleamarket.test.LogInTest@b2c6b61]" name="after" is-config="true" duration-ms="718" started-at="2014-10-03T08:09:34Z" finished-at="2014-10-03T08:09:35Z">
+          <reporter-output>
+            <line>
+              <![CDATA[driver.quit...<br>]]>
+            </line>
+            <line>
+              <![CDATA[killing processes<br>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- after -->
+      </class> <!-- fleamarket.test.LogInTest -->
+    </test> <!-- Functional Tests -->
+  </suite> <!-- Course Project Test Plan -->
+</testng-results>

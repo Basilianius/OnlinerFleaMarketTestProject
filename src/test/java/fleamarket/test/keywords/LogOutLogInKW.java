@@ -2,8 +2,10 @@ package fleamarket.test.keywords;
 
 
 import java.util.HashMap;
+
 import fleamarket.test.entities.AccountEntity;
 import fleamarket.test.forms.MainPage;
+import fleamarket.test.keywords.BaseKeyword.Status;
 
 public class LogOutLogInKW extends BaseKeyword{
 	private MainPage mainPage;
@@ -31,12 +33,5 @@ public class LogOutLogInKW extends BaseKeyword{
 
 		status = Status.SUCCESSED.toString();
 	}
-
-	@Override
-	void afterRun() {
-	
-	}
-
-
 
 }

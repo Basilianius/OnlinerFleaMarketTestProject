@@ -15,15 +15,32 @@ public class MainPage extends ProjectBasePage{
 	
 	private Link lnkSignOut = new Link(By.xpath("//div[@class='b-top-profile__user-account']/a[@class='exit']"), "SignOut");
 	
-	private TextBox txbUserName = new TextBox(By.xpath("//div[@class='b-top-profile__log-in']//input[@name='username']"), "UserName");
-	private TextBox txbPassword = new TextBox(By.xpath("//div[@class='b-top-profile__log-in']//input[@name='password']"), "Password");
-	private TextBox txbHidePassword = new TextBox(By.xpath("//div[@class='b-top-profile__log-in']//input[@name='__nothing']"), "Password");
-	private Button btnSignIn = new Button(By.xpath("//div[@class='b-top-profile__log-in']//button[@class='submit']"), "SignIn");
+	//private TextBox txbUserName = new TextBox(By.xpath("//div[@class='b-top-profile__log-in']//input[@name='username']"), "UserName");
+	private TextBox txbUserName = new TextBox(By.xpath("//div[@class='auth-box__field']//input[@placeholder='Ник или e-mail']"), "UserName");
+	
+	//private TextBox txbPassword = new TextBox(By.xpath("//div[@class='b-top-profile__log-in']//input[@name='password']"), "Password");
+	private TextBox txbPassword = new TextBox(By.xpath("//div[@class='auth-box__field']//input[@placeholder='Пароль']"), "Password");
+	
+	//private TextBox txbHidePassword = new TextBox(By.xpath("//div[@class='b-top-profile__log-in']//input[@name='__nothing']"), "Password");
+	
+	//private Button btnSignIn = new Button(By.xpath("//div[@class='b-top-profile__log-in']//button[@class='submit']"), "SignIn");
+	private Button btnSignInOpen = new Button(By.xpath("//div[@id='userbar']//div[@class='auth-bar__item auth-bar__item--text']"), "SignInOpen");
+	private Button btnSignIn = new Button(By.xpath("//div[@class='auth-box__field']//button[@class='auth-box__auth-submit auth__btn auth__btn--green']"), "SignIn");
 	
 	private Link lnkUserName = new Link(By.xpath("//div[@class='b-top-profile__user-account']/p[@class='user-name']/a"), "UserName");
 	
+	private Link lnkElementTopMenu;
+	private String elementTopMenuLocator = "//li[@class='b-main-navigation__item']/a[contains(text(),'%s')]";
+	
 	public MainPage(){
 		super(formLocator, formName);
+	}
+	
+	public void navigateElementTopMenu(String elementName){
+		elementTopMenuLocator = String.format(elementTopMenuLocator, elementName); 
+		lnkElementTopMenu = new Link(By.xpath(elementTopMenuLocator), elementName);
+		lnkElementTopMenu.click();
+		 
 	}
 	
 	public void signOut(){
@@ -37,8 +54,10 @@ public class MainPage extends ProjectBasePage{
 		if (signedStatus){
 			signOut();
 		}
+		btnSignInOpen.click();
+		
 		txbUserName.type(userName);
-		txbHidePassword.click();
+		//txbHidePassword.click();
 		txbPassword.type(password);
 		btnSignIn.click();
 		
@@ -50,7 +69,6 @@ public class MainPage extends ProjectBasePage{
 	}	
 	
 	public boolean assertSignedAccount(AccountEntity expectedAccount){
-		
 		String receivedUserName = lnkUserName.getText();
 		String expectedUserName = expectedAccount.getUserName();
 		

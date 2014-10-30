@@ -2,20 +2,26 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Course Project Test Plan]">
   <parameter name="baseUrl" value="http://onliner.by"/>
+  <parameter name="fleaMarketName" value="Барахолка"/>
   <parameter name="accountFilePath" value="src\test\resources\accountFile.xlsx"/>
   <parameter name="accountFileSheetName" value="Sheet1"/>
+  <parameter name="adFilePath" value="src\test\resources\adFile.xlsx"/>
+  <parameter name="adFileSheetName" value="Sheet1"/>
   <test name="Functional Tests(failed)">
     <parameter name="baseUrl" value="http://onliner.by"/>
+    <parameter name="fleaMarketName" value="Барахолка"/>
     <parameter name="accountFileSheetName" value="Sheet1"/>
     <parameter name="accountFilePath" value="src\test\resources\accountFile.xlsx"/>
+    <parameter name="adFilePath" value="src\test\resources\adFile.xlsx"/>
+    <parameter name="adFileSheetName" value="Sheet1"/>
     <classes>
-      <class name="fleamarket.test.LogInTest">
+      <class name="fleamarket.test.CreateAdTest">
         <methods>
-          <include name="readParams" invocation-numbers="0"/>
           <include name="after"/>
+          <include name="readParams" invocation-numbers="0"/>
           <include name="before"/>
         </methods>
-      </class> <!-- fleamarket.test.LogInTest -->
+      </class> <!-- fleamarket.test.CreateAdTest -->
     </classes>
   </test> <!-- Functional Tests(failed) -->
 </suite> <!-- Failed suite [Course Project Test Plan] -->

@@ -23,12 +23,14 @@ public abstract class BaseKeyword extends BaseEntity{
 	
 	abstract void beforeRun(HashMap<String, Object> parameters);
 	abstract void run();
-	abstract void afterRun();
+	void afterRun(){
+		assertEquals("KeyWord is not executed", Status.SUCCESSED, status);		
+	}
 	
 	final void display(String action){
 		logger.info("");
 		logger.info(String.format("%s is %s", keywordName, action));
-		logger.info("");
+		//logger.info("");
 	}
 	
 	public final String getName(){

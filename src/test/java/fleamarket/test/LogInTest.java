@@ -56,6 +56,7 @@ public class LogInTest extends BaseTest {
 		LogStep();
 		logger.info("Check signed account".toUpperCase());
 		assertEquals("Check is not true", true, mainPage.assertSignedAccount(testAccountMakerAd));
+		logger.info("Check signed account - SUCCESS".toUpperCase());
 		
 	}
 }

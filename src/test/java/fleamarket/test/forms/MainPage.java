@@ -10,20 +10,21 @@ import webdriver.elements.TextBox;
 public class MainPage extends ProjectBasePage{
 	private static boolean signedStatus = false;
 	
-	private static String formName = String.format("MainPage signed is %s", signedStatus);
+	private static String formName = "MainPage";
 	private static String formLocator = "//ul[@class='b-top-navigation__additional-links']//a[contains(text(), 'Манифест')]";
 	
 	private Link lnkSignOut = new Link(By.xpath("//div[@class='b-top-profile__user-account']/a[@class='exit']"), "SignOut");
 	
+	//old login
 	//private TextBox txbUserName = new TextBox(By.xpath("//div[@class='b-top-profile__log-in']//input[@name='username']"), "UserName");
-	private TextBox txbUserName = new TextBox(By.xpath("//div[@class='auth-box__field']//input[@placeholder='Ник или e-mail']"), "UserName");
-	
 	//private TextBox txbPassword = new TextBox(By.xpath("//div[@class='b-top-profile__log-in']//input[@name='password']"), "Password");
+	//private TextBox txbHidePassword = new TextBox(By.xpath("//div[@class='b-top-profile__log-in']//input[@name='__nothing']"), "Password");
+	//private Button btnSignIn = new Button(By.xpath("//div[@class='b-top-profile__log-in']//button[@class='submit']"), "SignIn");
+	
+	private TextBox txbUserName = new TextBox(By.xpath("//div[@class='auth-box__field']//input[@placeholder='Ник или e-mail']"), "UserName");
+
 	private TextBox txbPassword = new TextBox(By.xpath("//div[@class='auth-box__field']//input[@placeholder='Пароль']"), "Password");
 	
-	//private TextBox txbHidePassword = new TextBox(By.xpath("//div[@class='b-top-profile__log-in']//input[@name='__nothing']"), "Password");
-	
-	//private Button btnSignIn = new Button(By.xpath("//div[@class='b-top-profile__log-in']//button[@class='submit']"), "SignIn");
 	private Button btnSignInOpen = new Button(By.xpath("//div[@id='userbar']//div[@class='auth-bar__item auth-bar__item--text']"), "SignInOpen");
 	private Button btnSignIn = new Button(By.xpath("//div[@class='auth-box__field']//button[@class='auth-box__auth-submit auth__btn auth__btn--green']"), "SignIn");
 	
@@ -57,6 +58,7 @@ public class MainPage extends ProjectBasePage{
 		btnSignInOpen.click();
 		
 		txbUserName.type(userName);
+		//old login
 		//txbHidePassword.click();
 		txbPassword.type(password);
 		btnSignIn.click();

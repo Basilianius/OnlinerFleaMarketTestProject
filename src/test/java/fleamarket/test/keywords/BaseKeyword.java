@@ -9,22 +9,28 @@ public abstract class BaseKeyword extends BaseEntity{
 	protected enum Action {START, END}
 	
 	protected String keywordName;
-	protected String status = Status.FAILED.toString();
+	protected Status status = Status.FAILED;
 	
-	public final void runKeyword(HashMap<String, Object> parameters){
+	protected Object returnParameters = null;
+	
+	public final Object runKeyword(HashMap<String, Object> parameters){
 		display(Action.START.toString());
-		beforeRun(parameters);
+		setParameters(parameters);
 		run();
-		afterRun();
+		checkSuccess();
 		
 		display(Action.END.toString());
-		display(status);
+		display(status.toString());
+		
+		return returnParameters;
 	}
 	
-	abstract void beforeRun(HashMap<String, Object> parameters);
+	abstract void setParameters(HashMap<String, Object> parameters);
+	
 	abstract void run();
-	void afterRun(){
-		assertEquals("KeyWord is not executed", Status.SUCCESSED, status);		
+	
+	void checkSuccess(){
+		assertEquals("KeyWord is not executed", Status.SUCCESSED, status);
 	}
 	
 	final void display(String action){

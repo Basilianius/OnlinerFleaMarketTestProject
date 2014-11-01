@@ -8,9 +8,17 @@
 		<parameter name="adFilePath" value="src\test\resources\adFile.xlsx" />
 		<parameter name="adFileSheetName" value="Sheet1" />		
 		<parameter name="fleaMarketName" value="Барахолка" />
+		<parameter name="adStatusExp" value="Объявление неактуально" />
+		
 		<classes>
  			<!-- <class name="fleamarket.test.LogInTest" /> -->
- 			<class name="fleamarket.test.CreateAdTest" /> 			
+ 			<!-- <class name="fleamarket.test.CreateAdTest" /> --> 			
+			<!-- <class name="fleamarket.test.SearchAdTest" /> -->
+			<!-- <class name="fleamarket.test.CheckViewAdTest" /> -->			
+			<!-- <class name="fleamarket.test.UpAdTest" /> -->
+			<!-- <class name="fleamarket.test.EditAdTest" /> -->
+			<!-- <class name="fleamarket.test.AddAdToFavoritesTest" /> -->
+			<class name="fleamarket.test.CloseAdTest" /> 					
         </classes>
 	</test>
 </suite>

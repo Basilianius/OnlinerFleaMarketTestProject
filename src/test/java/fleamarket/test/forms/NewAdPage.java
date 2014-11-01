@@ -31,7 +31,7 @@ public class NewAdPage extends ProjectBasePage {
 		txbPrice.type(newAd.getPrice());
 		
 		txbSubject.setText(newAd.getSubject());
-		cmbTopic.selectByIndex(1);
+		cmbTopic.selectByIndex((int)Integer.valueOf(newAd.getTopic()));
 	}
 	
 	public void createAd(AdEntity newAd){

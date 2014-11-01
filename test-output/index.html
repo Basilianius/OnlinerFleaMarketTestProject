@@ -23,7 +23,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -37,7 +37,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Course_Project_Test_Plan">
-              <span class="suite-name border-failed">Course Project Test Plan</span>
+              <span class="suite-name border-passed">Course Project Test Plan</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -90,21 +90,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method, 1 failed,   </span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Course_Project_Test_Plan" class="hide-methods failed suite-Course_Project_Test_Plan"> (hide)</a> <!-- hide-methods failed suite-Course_Project_Test_Plan -->
-                      <a href="#" panel-name="suite-Course_Project_Test_Plan" class="show-methods failed suite-Course_Project_Test_Plan"> (show)</a> <!-- show-methods failed suite-Course_Project_Test_Plan -->
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Course_Project_Test_Plan" class="hide-methods passed suite-Course_Project_Test_Plan"> (hide)</a> <!-- hide-methods passed suite-Course_Project_Test_Plan -->
+                      <a href="#" panel-name="suite-Course_Project_Test_Plan" class="show-methods passed suite-Course_Project_Test_Plan"> (show)</a> <!-- show-methods passed suite-Course_Project_Test_Plan -->
                     </span>
-                    <div class="method-list-content failed suite-Course_Project_Test_Plan">
+                    <div class="method-list-content passed suite-Course_Project_Test_Plan">
                       <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Course_Project_Test_Plan" title="fleamarket.test.CreateAdTest" hash-for-method="readParams(http://onliner.by, src\test\resources\accountFile.xlsx, Sheet1, Барахолка, src\test\resources\adFile...)">readParams(http://onliner.by, src\test\resources\accountFile.xlsx, Sheet1, Барахолка, src\test\resources\adFile...)</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Course_Project_Test_Plan" title="fleamarket.test.CloseAdTest" hash-for-method="readParams(http://onliner.by, src\test\resources\accountFile.xlsx, Sheet1, src\test\resources\adFile.xlsx, Shee...)">readParams(http://onliner.by, src\test\resources\accountFile.xlsx, Sheet1, src\test\resources\adFile.xlsx, Shee...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-Course_Project_Test_Plan -->
+                    </div> <!-- method-list-content passed suite-Course_Project_Test_Plan -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -116,36 +116,22 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Course_Project_Test_Plan" class="panel Course_Project_Test_Plan">
-          <div class="suite-Course_Project_Test_Plan-class-failed">
+          <div class="suite-Course_Project_Test_Plan-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">fleamarket.test.CreateAdTest</span>
+              <img src="passed.png"/>
+              <span class="class-name">fleamarket.test.CloseAdTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="readParams(http://onliner.by, src\test\resources\accountFile.xlsx, Sheet1, Барахолка, src\test\resources\adFile...)">
-                  </a> <!-- readParams(http://onliner.by, src\test\resources\accountFile.xlsx, Sheet1, Барахолка, src\test\resources\adFile...) -->
+                  <a name="readParams(http://onliner.by, src\test\resources\accountFile.xlsx, Sheet1, src\test\resources\adFile.xlsx, Shee...)">
+                  </a> <!-- readParams(http://onliner.by, src\test\resources\accountFile.xlsx, Sheet1, src\test\resources\adFile.xlsx, Shee...) -->
                   <span class="method-name">readParams</span>
-                  <span class="parameters">(http://onliner.by, src\test\resources\accountFile.xlsx, Sheet1, Барахолка, src\test\resources\adFile.xlsx, Sheet1)</span>
-                  <div class="stack-trace">junit.framework.AssertionFailedError: null
-	at junit.framework.Assert.fail(Assert.java:47)
-	at junit.framework.Assert.assertTrue(Assert.java:20)
-	at junit.framework.Assert.assertTrue(Assert.java:27)
-	at webdriver.Logger.fatal(Logger.java:256)
-	at webdriver.BaseEntity.fatal(BaseEntity.java:93)
-	at webdriver.BaseEntity.assertEquals(BaseEntity.java:171)
-	at fleamarket.test.keywords.BaseKeyword.afterRun(BaseKeyword.java:27)
-	at fleamarket.test.keywords.BaseKeyword.runKeyword(BaseKeyword.java:18)
-	at fleamarket.test.CreateAdTest.runTest(CreateAdTest.java:72)
-	at webdriver.BaseTest.xTest(BaseTest.java:25)
-	at fleamarket.test.CreateAdTest.readParams(CreateAdTest.java:54)
-... Removed 24 stack frames
-</div> <!-- stack-trace -->
+                  <span class="parameters">(http://onliner.by, src\test\resources\accountFile.xlsx, Sheet1, src\test\resources\adFile.xlsx, Sheet1, Объявление неактуально)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Course_Project_Test_Plan-class-failed -->
+          </div> <!-- suite-Course_Project_Test_Plan-class-passed -->
         </div> <!-- panel Course_Project_Test_Plan -->
         <div panel-name="test-xml-Course_Project_Test_Plan" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -157,6 +143,7 @@
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Course Project Test Plan&quot;&gt;
   &lt;test name=&quot;Functional Tests&quot;&gt;
+    &lt;parameter name=&quot;adStatusExp&quot; value=&quot;Объявление неактуально&quot;/&gt;
     &lt;parameter name=&quot;baseUrl&quot; value=&quot;http://onliner.by&quot;/&gt;
     &lt;parameter name=&quot;fleaMarketName&quot; value=&quot;Барахолка&quot;/&gt;
     &lt;parameter name=&quot;accountFileSheetName&quot; value=&quot;Sheet1&quot;/&gt;
@@ -164,7 +151,7 @@
     &lt;parameter name=&quot;adFilePath&quot; value=&quot;src\test\resources\adFile.xlsx&quot;/&gt;
     &lt;parameter name=&quot;adFileSheetName&quot; value=&quot;Sheet1&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;fleamarket.test.CreateAdTest&quot;/&gt;
+      &lt;class name=&quot;fleamarket.test.CloseAdTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Functional Tests --&gt;
 &lt;/suite&gt; &lt;!-- Course Project Test Plan --&gt;
@@ -207,13 +194,13 @@ data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'readParams')
-data.setCell(0, 2, 'fleamarket.test.CreateAdTest')
-data.setCell(0, 3, 25558);
+data.setCell(0, 2, 'fleamarket.test.CloseAdTest')
+data.setCell(0, 3, 33892);
 window.suiteTableData['Course_Project_Test_Plan']= { tableData: data, tableDiv: 'times-div-Course_Project_Test_Plan'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 25 seconds</span>
+              <span class="suite-total-time">Total running time: 33 seconds</span>
               <div id="times-div-Course_Project_Test_Plan">
               </div> <!-- times-div-Course_Project_Test_Plan -->
             </div> <!-- times-div -->
@@ -225,16 +212,15 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="reporter-method-div">
-              <span class="reporter-method-name">readParams(http://onliner.by, src\test\resources\accountFile.xlsx, Sheet1, Барахолка, src\test\resources\adFile...)</span>
+              <span class="reporter-method-name">readParams(http://onliner.by, src\test\resources\accountFile.xlsx, Sheet1, src\test\resources\adFile.xlsx, Shee...)</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output"><div class="skipped">Failed to get cell value at row number '1' and column number '5' on sheet with name 'Sheet1'.</div><br></span>
-                <span class="reporter-method-output">--------------------------------------------------------------------------------------<br></span>
-                <span class="reporter-method-output">=====================  Test case: 'fleamarket.test.CreateAdTest' =====================<br></span>
-                <span class="reporter-method-output">--------------------------------------------------------------------------------------<br></span>
+                <span class="reporter-method-output">-------------------------------------------------------------------------------------<br></span>
+                <span class="reporter-method-output">=====================  Test case: 'fleamarket.test.CloseAdTest' =====================<br></span>
+                <span class="reporter-method-output">-------------------------------------------------------------------------------------<br></span>
                 <span class="reporter-method-output">--------==[ Preconditions ]==--------<br></span>
                 <span class="reporter-method-output">--------==[ Step 1 ]==--------<br></span>
                 <span class="reporter-method-output">OPEN MAINPAGE<br></span>
-                <span class="reporter-method-output">Form 'MainPage signed is false' appears in 178msec<br></span>
+                <span class="reporter-method-output">Form 'MainPage' appears in 142msec<br></span>
                 <span class="reporter-method-output">--------==[ Step 2 ]==--------<br></span>
                 <span class="reporter-method-output"><br></span>
                 <span class="reporter-method-output">LogOutLogInKW is START<br></span>
@@ -243,10 +229,40 @@ return data;
                 <span class="reporter-method-output">Text Field 'UserName' :: Typing 'mrqabugs'<br></span>
                 <span class="reporter-method-output">Text Field 'Password' :: Typing 'ZAQ12wsx'<br></span>
                 <span class="reporter-method-output">Button 'SignIn' :: Clicking<br></span>
-                <span class="reporter-method-output"><div class="failedConfig">null</div><br></span>
-                <span class="reporter-method-output"><div class="skipped"></div><br></span>
-                <span class="reporter-method-output"><div class="failedConfig">>>>>>>>> TEST FAILED <<<<<<<<</div><br></span>
-                <span class="reporter-method-output"><div class="skipped"></div><br></span>
+                <span class="reporter-method-output"><br></span>
+                <span class="reporter-method-output">LogOutLogInKW is END<br></span>
+                <span class="reporter-method-output"><br></span>
+                <span class="reporter-method-output">LogOutLogInKW is SUCCESSED<br></span>
+                <span class="reporter-method-output">--------==[ Step 3 ]==--------<br></span>
+                <span class="reporter-method-output"><br></span>
+                <span class="reporter-method-output">CheckAdByAccountKW is START<br></span>
+                <span class="reporter-method-output">OPEN FLEAMARKET<br></span>
+                <span class="reporter-method-output">Link 'Барахолка' :: Clicking<br></span>
+                <span class="reporter-method-output">Form 'FleaMarketPage' appears in 170msec<br></span>
+                <span class="reporter-method-output">NAVIGATE TO MYADS<br></span>
+                <span class="reporter-method-output">Link 'MyAds' :: Clicking<br></span>
+                <span class="reporter-method-output">Form 'MyAdsPage' appears in 183msec<br></span>
+                <span class="reporter-method-output">SEARCH ADHEADLINE<br></span>
+                <span class="reporter-method-output"><br></span>
+                <span class="reporter-method-output">CheckAdByAccountKW is END<br></span>
+                <span class="reporter-method-output"><br></span>
+                <span class="reporter-method-output">CheckAdByAccountKW is SUCCESSED<br></span>
+                <span class="reporter-method-output">--------==[ Step 4 ]==--------<br></span>
+                <span class="reporter-method-output">OPEN AD<br></span>
+                <span class="reporter-method-output">Link 'AdHeadline' :: Clicking<br></span>
+                <span class="reporter-method-output">--------==[ Step 5 ]==--------<br></span>
+                <span class="reporter-method-output">CLOSE AD<br></span>
+                <span class="reporter-method-output">Form 'NewAdPage' appears in 1611msec<br></span>
+                <span class="reporter-method-output">Link 'CloseAd' :: Clicking<br></span>
+                <span class="reporter-method-output">Link 'CloseAdOk' :: Clicking<br></span>
+                <span class="reporter-method-output"><br></span>
+                <span class="reporter-method-output">--------==[ Step 6 ]==--------<br></span>
+                <span class="reporter-method-output">CHECK AD STATUS<br></span>
+                <span class="reporter-method-output"><br></span>
+                <span class="reporter-method-output">************************************************************<br></span>
+                <span class="reporter-method-output">***** Test case: 'fleamarket.test.CloseAdTest' Passed! *****<br></span>
+                <span class="reporter-method-output">************************************************************<br></span>
+                <span class="reporter-method-output"><br></span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -264,20 +280,18 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">fleamarket.test.CreateAdTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">fleamarket.test.CloseAdTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">before(org.testng.TestRunner@4a140a2c)</span>
+                <span class="method-name">before(org.testng.TestRunner@28afec63)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">readParams(http://onliner.by, src\test\resources\accountFile.xlsx, Sheet1, Барахолка, src\test\resources\adFile...)</span>
-                <span class="method-start">108 ms</span>
+                <span class="method-name">readParams(http://onliner.by, src\test\resources\accountFile.xlsx, Sheet1, src\test\resources\adFile.xlsx, Shee...)</span>
+                <span class="method-start">88 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">after</span>
-                <span class="method-start">25671 ms</span>
+                <span class="method-start">33981 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -19,13 +19,14 @@ public class MyAdsPage extends ProjectBasePage {
 	public Link findAdByHeadline(AdEntity ad){
 		String headline = ad.getHeadline();
 		
-		//lnkAdHeadlineLocator = String.format(lnkAdHeadlineLocator, headline);
-		lnkAdHeadlineLocator = String.format(lnkAdHeadlineLocator, "asd");
+		lnkAdHeadlineLocator = String.format(lnkAdHeadlineLocator, headline);
 		lnkAdHeadline = new Link(By.xpath(lnkAdHeadlineLocator), "AdHeadline");
 		
 		if (! lnkAdHeadline.isPresent()){
 			lnkAdHeadline = null;
 		}
+		
+		//lnkAdHeadline = null;
 		
 		return lnkAdHeadline;
 	}

@@ -7,7 +7,6 @@ import fleamarket.test.entities.AdEntity;
 import fleamarket.test.forms.FleaMarketPage;
 import fleamarket.test.forms.MainPage;
 import fleamarket.test.forms.MyAdsPage;
-import fleamarket.test.keywords.BaseKeyword.Status;
 
 public class CheckAdByAccountKW extends BaseKeyword{
 	private MainPage mainPage;
@@ -19,7 +18,7 @@ public class CheckAdByAccountKW extends BaseKeyword{
 	}
 	
 	@Override
-	void beforeRun(HashMap<String, Object> parameters) {
+	void setParameters(HashMap<String, Object> parameters) {
 		if (parameters.get("startPage") != null){
 			this.mainPage = (MainPage) parameters.get("startPage");
 		}
@@ -39,10 +38,14 @@ public class CheckAdByAccountKW extends BaseKeyword{
 		fleaMarketPage.navigateToMyAds();
 		
 		MyAdsPage myAdsPage = new MyAdsPage();
+		
+		logger.info("Search AdHeadline".toUpperCase());		
 		Link lnkAdHeadline = myAdsPage.findAdByHeadline(this.ad);
 		
+		this.returnParameters = (Object) myAdsPage;
+		
 		if (lnkAdHeadline != null) {
-			status = Status.SUCCESSED.toString();
+			status = Status.SUCCESSED;
 		}
 		
 	}

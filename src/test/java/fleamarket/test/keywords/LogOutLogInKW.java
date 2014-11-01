@@ -5,7 +5,6 @@ import java.util.HashMap;
 
 import fleamarket.test.entities.AccountEntity;
 import fleamarket.test.forms.MainPage;
-import fleamarket.test.keywords.BaseKeyword.Status;
 
 public class LogOutLogInKW extends BaseKeyword{
 	private MainPage mainPage;
@@ -17,7 +16,7 @@ public class LogOutLogInKW extends BaseKeyword{
 	}
 	
 	@Override
-	void beforeRun(HashMap<String, Object> parameters) {
+	void setParameters(HashMap<String, Object> parameters) {
 		if (parameters.get("startPage") != null){
 			this.mainPage = (MainPage) parameters.get("startPage");
 		}
@@ -31,7 +30,7 @@ public class LogOutLogInKW extends BaseKeyword{
 		logger.info("Sing out/in to account".toUpperCase());		
 		mainPage.signInByUserName(account.getUserName(), account.getPassword());
 
-		status = Status.SUCCESSED.toString();
+		status = Status.SUCCESSED;
 	}
 
 }

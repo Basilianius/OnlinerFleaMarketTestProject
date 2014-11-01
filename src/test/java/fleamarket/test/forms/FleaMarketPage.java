@@ -22,11 +22,12 @@ public class FleaMarketPage extends ProjectBasePage {
 	
 	public void createAdByAdEntity(AdEntity newAd){
 		lnkCreateAd.click();
+		
 		NewAdPage newAdPage = new NewAdPage();
 		newAdPage.createAd(newAd);
 		
 		ViewAdPage viewAdPage = new ViewAdPage();
-		
+
 		String adId = viewAdPage.getAdId();
 		newAd.setId(adId);
 		

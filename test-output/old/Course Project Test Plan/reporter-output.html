@@ -1,13 +1,12 @@
 <h2>Reporter output</h2><table><tr><td>browser driver was constructed<br></td></tr>
 <tr><td>Browser 'firefox' ready...<br></td></tr>
-<tr><td><div class="skipped">Failed to get cell value at row number '1' and column number '5' on sheet with name 'Sheet1'.</div><br></td></tr>
-<tr><td>--------------------------------------------------------------------------------------<br></td></tr>
-<tr><td>=====================  Test case: 'fleamarket.test.CreateAdTest' =====================<br></td></tr>
-<tr><td>--------------------------------------------------------------------------------------<br></td></tr>
+<tr><td>-------------------------------------------------------------------------------------<br></td></tr>
+<tr><td>=====================  Test case: 'fleamarket.test.CloseAdTest' =====================<br></td></tr>
+<tr><td>-------------------------------------------------------------------------------------<br></td></tr>
 <tr><td>--------==[ Preconditions ]==--------<br></td></tr>
 <tr><td>--------==[ Step 1 ]==--------<br></td></tr>
 <tr><td>OPEN MAINPAGE<br></td></tr>
-<tr><td>Form 'MainPage signed is false' appears in 178msec<br></td></tr>
+<tr><td>Form 'MainPage' appears in 142msec<br></td></tr>
 <tr><td>--------==[ Step 2 ]==--------<br></td></tr>
 <tr><td><br></td></tr>
 <tr><td>LogOutLogInKW is START<br></td></tr>
@@ -16,10 +15,43 @@
 <tr><td>Text Field 'UserName' :: Typing 'mrqabugs'<br></td></tr>
 <tr><td>Text Field 'Password' :: Typing 'ZAQ12wsx'<br></td></tr>
 <tr><td>Button 'SignIn' :: Clicking<br></td></tr>
-<tr><td><div class="failedConfig">null</div><br></td></tr>
-<tr><td><div class="skipped"></div><br></td></tr>
-<tr><td><div class="failedConfig">>>>>>>>> TEST FAILED <<<<<<<<</div><br></td></tr>
-<tr><td><div class="skipped"></div><br></td></tr>
+<tr><td><br></td></tr>
+<tr><td>LogOutLogInKW is END<br></td></tr>
+<tr><td><br></td></tr>
+<tr><td>LogOutLogInKW is SUCCESSED<br></td></tr>
+<tr><td>--------==[ Step 3 ]==--------<br></td></tr>
+<tr><td><br></td></tr>
+<tr><td>CheckAdByAccountKW is START<br></td></tr>
+<tr><td>OPEN FLEAMARKET<br></td></tr>
+<tr><td>Link 'Барахолка' :: Clicking<br></td></tr>
+<tr><td>Form 'FleaMarketPage' appears in 170msec<br></td></tr>
+<tr><td>NAVIGATE TO MYADS<br></td></tr>
+<tr><td>Link 'MyAds' :: Clicking<br></td></tr>
+<tr><td>Form 'MyAdsPage' appears in 183msec<br></td></tr>
+<tr><td>SEARCH ADHEADLINE<br></td></tr>
+<tr><td><br></td></tr>
+<tr><td>CheckAdByAccountKW is END<br></td></tr>
+<tr><td><br></td></tr>
+<tr><td>CheckAdByAccountKW is SUCCESSED<br></td></tr>
+<tr><td>--------==[ Step 4 ]==--------<br></td></tr>
+<tr><td>OPEN AD<br></td></tr>
+<tr><td>Link 'AdHeadline' :: Clicking<br></td></tr>
+<tr><td>--------==[ Step 5 ]==--------<br></td></tr>
+<tr><td>CLOSE AD<br></td></tr>
+<tr><td>Form 'NewAdPage' appears in 1611msec<br></td></tr>
+<tr><td>Link 'CloseAd' :: Clicking<br></td></tr>
+<tr><td>Link 'CloseAdOk' :: Clicking<br></td></tr>
+<tr><td><br></td></tr>
+<tr><td>--------==[ Step 6 ]==--------<br></td></tr>
+<tr><td>CHECK AD STATUS<br></td></tr>
+<tr><td><br></td></tr>
+<tr><td>************************************************************<br></td></tr>
+<tr><td>***** Test case: 'fleamarket.test.CloseAdTest' Passed! *****<br></td></tr>
+<tr><td>************************************************************<br></td></tr>
+<tr><td><br></td></tr>
 <tr><td>driver.quit...<br></td></tr>
 <tr><td>killing processes<br></td></tr>
+<tr><td>SUCCESS: The process "firefox.exe" with PID 3336 has been terminated.<br></td></tr>
+<tr><td>SUCCESS: The process "firefox.exe" with PID 8992 has been terminated.<br></td></tr>
+<tr><td>SUCCESS: The process "firefox.exe" with PID 9132 has been terminated.<br></td></tr>
 </table>

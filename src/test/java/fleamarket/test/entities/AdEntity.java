@@ -20,10 +20,16 @@ public class AdEntity extends BaseEntity{
 	public AdEntity(String filePath, String sheetName, int adNum){
 		SMARTExcelUtils excelUtils = new SMARTExcelUtils(filePath);
 		
+		//this.setCategory(excelUtils.getCellValue(sheetName, adNum, 0));
+		
+		this.setTopic(excelUtils.getCellValue(sheetName, adNum, 1));
+		
 		this.setHeadline(excelUtils.getCellValue(sheetName, adNum, 2));
+		//this.setPlace(excelUtils.getCellValue(sheetName, adNum, 3));		
 		this.setBody(excelUtils.getCellValue(sheetName, adNum, 4));
+		//this.setSubject(excelUtils.getCellValue(sheetName, adNum, 5));
 		this.setPrice(excelUtils.getCellValue(sheetName, adNum, 6));
-		this.setSubject(excelUtils.getCellValue(sheetName, adNum, 5));
+
 	}
 
 	@Override
@@ -86,6 +92,22 @@ public class AdEntity extends BaseEntity{
 
 	public void setStatus(String status) {
 		this.status = status;
+	}
+
+	public String getTopic() {
+		return topic;
+	}
+
+	public void setTopic(String topic) {
+		this.topic = topic;
+	}
+
+	public String getPlace() {
+		return place;
+	}
+
+	public void setPlace(String place) {
+		this.place = place;
 	}
 	
 
